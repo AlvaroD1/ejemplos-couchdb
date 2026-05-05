@@ -14,7 +14,7 @@ for d in data['docs']:
 
 base_datos = "personas004"
 # Configurar el acceso a la base de datos
-url = f"http://127.0.0.1:5984/{base_datos}"
+url = f"http://127.0.0.1:5985/{base_datos}"
 headers = {'Content-Type': 'application/json'}
 
 # Enviar datos
@@ -25,3 +25,6 @@ for doc in lista_datos:
         json=doc
     )
     print(f"Insertando {doc['nombre']} | {response.status_code}")
+
+# Dentro del ejemplo 3 estamos subiendo los archivos uno por uno lo cual es mas lento,
+# mientras que en el ejemplo 4 subimos un solo paquete con todos los datos lo cual es mas eficiente

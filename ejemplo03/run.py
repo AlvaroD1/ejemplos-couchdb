@@ -14,7 +14,7 @@ for d in data['docs']:
 
 base_datos = "personas003"
 # Configurar el acceso a la base de datos
-url = f"http://127.0.0.1:5984/{base_datos}/_bulk_docs"
+url = f"http://127.0.0.1:5985/{base_datos}/_bulk_docs"
 headers = {'Content-Type': 'application/json'}
 
 # Enviar datos
